@@ -22,8 +22,8 @@ My results
 ---
 
 - C
-- - `catlist`: `N = 2000` takes 2 seconds.
-- - `catalanNumber`: `N = 100000` takes 3 seconds.
+  - `catlist`: `N = 2000` takes 2 seconds.
+  - `catalanNumber`: `N = 100000` takes 3 seconds.
 - GNU Octave: `N = 60` takes 0.6 second.
 
 License
