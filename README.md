@@ -14,7 +14,7 @@ Languages
   - `catlist`: List first `N` Catalan numbers.  (Use `N ≤ 4000` to
       avoid hanging your device.)
   - `catalanNumber`: `N = 100000` has been successfully tested.  Try
-      largest `N` at your risk.
+      larger `N` at your risk.
 - GNU Octave: copied from Rosetta code (Use `N ≤ 60` to avoid
     precision lost)
 
@@ -29,10 +29,10 @@ My results
 Advantages and disadvantages:
 ---
 
-- C: runs (≥100χ) faster, but more difficult to write
+- C: runs (≥100×) faster, but more difficult to write
 - GNU Octave: runs slower, but easier to write
 
-Which one to use?
+Conclusion: which one to use?
 ---
 
 - C: for *serious* performance reasons/arbitrary precision since the
