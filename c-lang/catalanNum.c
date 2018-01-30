@@ -15,7 +15,7 @@ int main() {
     char* input_str = (char*) malloc(max); /* allocate buffer */
     if (input_str == 0) quit();
 
-    printf("List Catalan no. up to: ");
+    printf("Catalan no. for n = ");
 
     while (1) { /* skip leading whitespace */
         int c = getchar();
@@ -54,7 +54,7 @@ int main() {
     /* Convert input_str into long int:
      * https://stackoverflow.com/a/37044102/3184351
      */
-    long N = 150;
+    long N;
     char *Nptr = NULL;
     N = strtol(input_str, &Nptr, 10);
     if (*Nptr == '\0') {
@@ -62,11 +62,9 @@ int main() {
         mpz_t cn;
         mpz_init(cn); // init and set to 0
 
-        for (i = 1; i <= N; i++) {
-            catalan(cn, i);
-            gmp_printf("%d: %Zd\n", i, cn);
-            mpz_set_ui(cn, 0); // free memory
-        }
+        catalan(cn, N);
+        gmp_printf("%Zd\n", cn);
+        mpz_set_ui(cn, 0); // free memory
 
         t2 = time(0);
         printf("\n Time elasped: %f seconds\n", difftime(t2, t1));
