@@ -26,6 +26,19 @@ My results
   - `catalanNumber`: `N = 100000` takes 3 seconds.
 - GNU Octave: `N = 60` takes 0.6 second.
 
+Advantages and disadvantages:
+---
+
+- C: runs (≥100χ) faster, but more difficult to write
+- GNU Octave: runs slower, but easier to write
+
+Which one to use?
+---
+
+- C: for *serious* performance reasons/arbitrary precision since the
+    time saved for one iteration is only about 3 seconds
+- GNU Octave: for ordinary usage
+
 License
 ---
 
