@@ -13,8 +13,18 @@ Languages
 - C (with GNU MultiPrecision Library)
   - `catlist`: List first `N` Catalan numbers.  (Use `N ≤ 4000` to
       avoid hanging your device.)
+  - `catalanNumber`: `N = 100000` has been successfully tested.  Try
+      largest `N` at your risk.
 - GNU Octave: copied from Rosetta code (Use `N ≤ 60` to avoid
     precision lost)
+
+My results
+---
+
+- C
+- - `catlist`: `N = 2000` takes 2 seconds.
+- - `catalanNumber`: `N = 100000` takes 3 seconds.
+- GNU Octave: `N = 60` takes 0.6 second.
 
 License
 ---
